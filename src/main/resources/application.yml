@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: JpaWithSpringCloudConfig
+  datasource:
+    url: jdbc:mysql://192.168.56.101:3306/mmpd
+    username: user
+    password: password
+datasource:
+  second:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.56.102:3306/md
+    username: user
+    password: password
+server:
+  address: 0.0.0.0
+  port: 8088
+management:
+  context-path: /monitor
+  security:
+    enabled: false
